@@ -4,7 +4,7 @@ import com.rainbow.packge.ocl.constants.CodeAndMsg;
 
 /**
  * 小贷内部异常
- * @author zhouliangfei
+ * @author xiaojiancao
  * @date 15-8-17 上午10:53
  */
 public class InteriorException extends Exception {

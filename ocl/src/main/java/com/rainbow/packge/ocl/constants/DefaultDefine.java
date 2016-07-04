@@ -71,9 +71,9 @@ public enum DefaultDefine implements CodeAndMsg {
     GUEST_NOT_LOGIN_FAIL("020002","请游客先登录"),
 
 
-    //add by zhouliangfei 2015-12-29 14:56:59 金额校验
+    //add by xiaojiancao 2015-12-29 14:56:59 金额校验
     AMOUNT_INPUT_FAIL("010101","请输入正确的金额"),
-    //end by zhouliangfei 2015-12-29 14:56:59 金额校验
+    //end by xiaojiancao 2015-12-29 14:56:59 金额校验
     //#####################参数校验类##############################
     //AES对称加密失败
     AES_ENCRYPT_FAIL("020009","加密错误"),
