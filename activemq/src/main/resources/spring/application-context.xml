@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.0.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+
+    <!-- 启用AOP注解 -->
+    <!--<aop:aspectj-autoproxy proxy-target-class="true"/>-->
+
+    <context:component-scan base-package="com.rainbow.packge" />
+
+    <!--<bean class="com.rainbow.packge.framework.PackagePropertyPlaceholder">
+        <property name="fileEncoding" value="utf-8"/>
+        <property name="locations">
+            <list>
+                &lt;!&ndash; 项目自定义配置文件 &ndash;&gt;
+                <value>${config_path}service.properties</value>
+                &lt;!&ndash; 统一配置文件 &ndash;&gt;
+                <value>classpath:bpecl-global.properties</value>
+                &lt;!&ndash; JDBC配置文件 &ndash;&gt;
+                <value>classpath:bpecl-global-jdbc.properties</value>
+                &lt;!&ndash; 短信模版配置 &ndash;&gt;
+                <value>classpath:bpecl-global-sms.properties</value>
+            </list>
+        </property>
+    </bean>-->
+
+    <!-- 开启事务注解驱动 -->
+    <!--<tx:annotation-driven transaction-manager="transactionManager"/>-->
+
+    <import resource="../spring-jms.xml"/>
+</beans>

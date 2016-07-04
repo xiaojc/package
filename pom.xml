@@ -14,6 +14,7 @@
         <module>ocl</module>
         <module>system</module>
         <module>activemq</module>
+        <module>commons</module>
     </modules>
 
     <properties>
@@ -98,6 +99,12 @@
                 <artifactId>spring-context</artifactId>
                 <version>${spring.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
 
             <dependency>
                 <groupId>asm</groupId>
@@ -212,12 +219,13 @@
             <dependency>
                 <groupId>javax.annotation</groupId>
                 <artifactId>jsr250-api</artifactId>
-                <version>1.0</version>
+                <version>${javax.annotation.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>org.apache.activemq</groupId>
                 <artifactId>activemq-core</artifactId>
-                <version>5.7.0</version>
+                <version>${org.apache.activemq.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
