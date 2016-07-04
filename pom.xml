@@ -12,7 +12,6 @@
 
     <modules>
         <module>ocl</module>
-        <module>commons</module>
         <module>system</module>
         <module>activemq</module>
     </modules>
