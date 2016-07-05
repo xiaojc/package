@@ -1,4 +1,4 @@
-package com.rainbow.packge.jms;
+package com.rainbow.packge.jms.listener;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jms.listener.SessionAwareMessageListener;

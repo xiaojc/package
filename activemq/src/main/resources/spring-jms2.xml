@@ -47,8 +47,8 @@
     </bean>
 
     <!--消息监听器-->
-    <bean id="consumerMessageListener" class="com.rainbow.packge.jms.ConsumerMessageListener"/>
-    <bean id="consumerSessionAwareMessageListener" class="com.rainbow.packge.jms.ConsumerSessionAwareMessageListener">
+    <bean id="consumerMessageListener" class="com.rainbow.packge.jms.listener.ConsumerMessageListener"/>
+    <bean id="consumerSessionAwareMessageListener" class="com.rainbow.packge.jms.listener.ConsumerSessionAwareMessageListener">
         <property name="destination" ref="sessionAwareQueue"/>
     </bean>
 

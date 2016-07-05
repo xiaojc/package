@@ -38,5 +38,5 @@
     <!-- 开启事务注解驱动 -->
     <!--<tx:annotation-driven transaction-manager="transactionManager"/>-->
 
-    <import resource="../spring-jms2.xml"/>
+    <import resource="../spring-jms3.xml"/>
 </beans>

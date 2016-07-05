@@ -1,4 +1,4 @@
-package com.rainbow.packge.jms;
+package com.rainbow.packge.jms.service;
 
 import javax.jms.Destination;
 
@@ -9,4 +9,6 @@ import javax.jms.Destination;
 public interface ProducerService {
 
     public void sendMessage(Destination destination, String message);
+
+    public void sendMessage(Destination destination, Object obj);
 }

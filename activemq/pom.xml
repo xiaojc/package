@@ -49,9 +49,17 @@
             <artifactId>activemq-all</artifactId>
             <version>5.13.3</version>
         </dependency>
-        <dependency>
+       <!-- <dependency>
             <groupId>commons-pool</groupId>
             <artifactId>commons-pool</artifactId>
+        </dependency>-->
+       <!-- <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+        </dependency>-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
         </dependency>
         <!-- log start -->
         <dependency>
@@ -68,9 +76,8 @@
         </dependency>
         <!-- log end -->
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <scope>test</scope>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
