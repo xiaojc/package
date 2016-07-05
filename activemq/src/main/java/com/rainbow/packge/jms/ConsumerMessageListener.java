@@ -6,7 +6,7 @@ import javax.jms.MessageListener;
 import javax.jms.TextMessage;
 
 /**
- * 功能描述:jms 监听实现类
+ * 功能描述:activeMQ jms 监听实现类
  * Created by Admin on 2016-07-04 23:17.
  */
 public class ConsumerMessageListener implements MessageListener {

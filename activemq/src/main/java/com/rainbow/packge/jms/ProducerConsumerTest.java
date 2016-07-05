@@ -20,14 +20,20 @@ public class ProducerConsumerTest {
 
     @Autowired
     private ProducerService producerService;
-    @Autowired
+   /* @Autowired
     @Qualifier("queueDestination")
+    private Destination destination;*/
+
+    @Autowired
+    @Qualifier("sessionAwareQueue")
     private Destination destination;
 
     @Test
     public void testSend() {
-        for (int i=0; i<2; i++) {
+       /* for (int i=0; i<2; i++) {
             producerService.sendMessage(destination, "你好，生产者！这是消息：" + (i+1));
-        }
+        }*/
+
+        producerService.sendMessage(destination, "生产者产生一条信息.");
     }
 }
