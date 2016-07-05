@@ -12,28 +12,55 @@
     <url>http://maven.apache.org</url>
 
     <dependencies>
+
+        <dependency>
+            <groupId>com.rainbow.package</groupId>
+            <artifactId>commons</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
         </dependency>
-       <!-- <dependency>
+        <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jms</artifactId>
-        </dependency>-->
+        </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
         </dependency>
-       <!-- <dependency>
+        <dependency>
             <groupId>javax.annotation</groupId>
             <artifactId>jsr250-api</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-core</artifactId>
-        </dependency>-->
+        </dependency>
 
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-all</artifactId>
+            <version>5.13.3</version>
+        </dependency>
+       <!-- <dependency>
+            <groupId>commons-pool</groupId>
+            <artifactId>commons-pool</artifactId>
+        </dependency>-->
+       <!-- <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+        </dependency>-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+        </dependency>
         <!-- log start -->
         <dependency>
             <groupId>log4j</groupId>
@@ -49,10 +76,12 @@
         </dependency>
         <!-- log end -->
         <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
     <build>
