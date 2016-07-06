@@ -2,6 +2,7 @@ package com.rainbow.packge.jms;
 
 import com.rainbow.packge.jms.model.Email;
 import com.rainbow.packge.jms.service.ProducerService;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,7 @@ import javax.jms.Destination;
  * Created by Admin on 2016-07-04 23:22.
  */
 
+@Slf4j
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("/spring/application-context.xml")
 public class ProducerConsumerTest {
@@ -44,7 +46,9 @@ public class ProducerConsumerTest {
 
     @Test
     public void testObjectMessage() {
+        log.info("开始发生消息：");
         Email email = new Email("zhangsan@xxx.com", "主题", "内容");
         producerService.sendMessage(destination, email);
+
     }
 }

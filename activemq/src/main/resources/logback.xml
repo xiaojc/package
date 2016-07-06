@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration debug="true">
     <property name="LOG_PATH" value="${logs_path}/activemq"/>
-    <conversionRule conversionWord="keep" converterClass="com.bestpay.mc.commons.framework.KeepConvert"/>
-    <conversionRule conversionWord="PID" converterClass="com.bestpay.mc.commons.framework.PIDConvert"/>
+    <conversionRule conversionWord="keep" converterClass="com.rainbow.commons.util.KeepConvert"/>
+    <conversionRule conversionWord="PID" converterClass="com.rainbow.commons.util.PIDConvert"/>
 
     <!-- 记录到日志文件 -->
-    <appender name="MC-CPS" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>${LOG_PATH}/mc-cps.log</File>
+    <appender name="PACKGE_ACTIVEMQ" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${LOG_PATH}/packge_activemq.log</File>
         <encoder>
             <pattern>[%d] [%keep] [%PID] [%thread] [%level] [%file:%line] %msg%n</pattern>
         </encoder>
@@ -25,10 +25,10 @@
             <pattern>[%d] [%keep] [%PID] [%thread] [%level] [%file:%line] %msg%n</pattern>
         </encoder>
     </appender>
-    <logger name="com.bestpay.mc.dao" level="DEBUG"/>
+    <!--<logger name="com.bestpay.mc.dao" level="DEBUG"/>-->
     <logger name="java.sql" level="INFO"/>
     <logger name="org.springframework" level="INFO"/>
-    <logger name="com.ibatis" level="INFO"/>
+    <!--<logger name="com.ibatis" level="INFO"/>-->
     <logger name="org.apache.commons" level="INFO"/>
 
     <!-- dubbo的部分日志不打印 -->
@@ -36,7 +36,7 @@
     <logger name="com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry" level="OFF"/>
 
     <root level="INFO">
-        <appender-ref ref="MC-CPS"/>
+        <appender-ref ref="PACKGE_ACTIVEMQ"/>
         <!-- 是否输出控制台日志，本地输出，其它环境不输出 -->
         ${shutdown_log}
     </root>
