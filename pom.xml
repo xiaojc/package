@@ -15,6 +15,7 @@
         <module>system</module>
         <module>activemq</module>
         <module>commons</module>
+        <module>echache</module>
     </modules>
 
     <properties>
