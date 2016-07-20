@@ -16,6 +16,7 @@
         <module>activemq</module>
         <module>commons</module>
         <module>echache</module>
+        <module>springcxf</module>
     </modules>
 
     <properties>
@@ -34,6 +35,8 @@
         <org.apache.activemq.version>5.7.0</org.apache.activemq.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <guava.version>15.0</guava.version>
+        <cxf.version>2.7.18</cxf.version>
+        <jaxws.version>3.1.4</jaxws.version>
     </properties>
 
     <dependencyManagement>
@@ -255,6 +258,32 @@
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
             </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.apache.cxf/cxf-api -->
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-api</artifactId>
+                <version>${cxf.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.apache.cxf/cxf-rt-frontend-jaxws -->
+
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-frontend-jaxws</artifactId>
+                <version>${jaxws.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-transports-http</artifactId>
+                <version>${jaxws.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+                <version>${jaxws.version}</version>
+            </dependency>
+
+
 
         </dependencies>
     </dependencyManagement>
